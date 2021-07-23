@@ -36,7 +36,28 @@ var comparisonChart = new Chart(document.getElementById("comparison"), {
     }
 });
 
-var mediaChart = new Chart(document.getElementById("media"), {
+var media2020Chart = new Chart(document.getElementById("media2020"), {
+    type: 'bar',
+    data: {
+        labels: ['Books', 'Movies', 'TV Shows', 'Musicals', 'Albums', 'Podcasts', 'Shorts'],
+        datasets: [{
+            label: '# of Items',
+            data: [53, 11, 9, 2, 37, 10, 1],
+            backgroundColor: ['rgba(150, 34, 244, 0.3)'],
+            borderColor: ['rgb(150, 34, 244)'],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+var media2021Chart = new Chart(document.getElementById("media2021"), {
     type: 'bar',
     data: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June'],
