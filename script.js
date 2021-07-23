@@ -1,0 +1,93 @@
+var comparisonChart = new Chart(document.getElementById("comparison"), {
+    type: 'bar',
+    data: {
+        labels: ['Coffee Shops Visited', 'Artists Seen Live', 'Plane Rides Taken', 'Books Read'],
+        datasets: [
+            {
+                label: '2019',
+                data: [43, 24, 34, 20],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)'
+                ],
+                borderColor: [
+                    'rgb(255, 99, 132)',
+                ],
+                borderWidth: 1
+            },
+            {
+                label: '2020',
+                data: [11, 2, 5, 66],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)',
+                ],
+                borderColor: [
+                    'rgb(54, 162, 235)',
+                ],
+                borderWidth: 1
+            }
+        ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+var mediaChart = new Chart(document.getElementById("media"), {
+    type: 'bar',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+        datasets: [
+            {
+                label: 'Books',
+                data: [18, 8, 7, 2, 6, 2],
+                backgroundColor: ['rgb(255, 99, 132)']
+            },
+            {
+                label: 'Movies',
+                data: [3, 4, 1, 1, 4, 0],
+                backgroundColor: ['rgb(255, 159, 64)']
+            },
+            {
+                label: 'TV Shows',
+                data: [3, 1, 4, 0, 3, 1],
+                backgroundColor: ['rgb(255, 205, 86)']
+            },
+            {
+                label: 'Musicals',
+                data: [0, 0, 2, 2, 0, 0],
+                backgroundColor: ['rgb(75, 192, 192)']
+            },
+            {
+                label: 'Albums',
+                data: [26, 16, 10, 6, 4, 8],
+                backgroundColor: ['rgb(54, 162, 235)']
+            },
+            {
+                label: 'Podcasts',
+                data: [0, 0, 0, 1, 0, 1],
+                backgroundColor: ['rgb(153, 102, 255)']
+            },
+            {
+                label: 'Shorts',
+                data: [3, 0, 1, 0, 0, 0],
+                backgroundColor: ['rgb(201, 203, 207)']
+            },
+            {
+                label: 'Soundtrack',
+                data: [2, 0, 2, 0, 0, 0],
+                backgroundColor: ['rgb(200, 99, 132)']
+            }
+        ]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+})
