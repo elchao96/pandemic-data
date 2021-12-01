@@ -60,46 +60,46 @@ var media2020Chart = new Chart(document.getElementById("media2020"), {
 var media2021Chart = new Chart(document.getElementById("media2021"), {
     type: 'bar',
     data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November'],
         datasets: [
             {
                 label: 'Books',
-                data: [18, 8, 7, 2, 6, 2, 3, 3, 3, 0],
+                data: [18, 8, 7, 2, 6, 2, 3, 3, 3, 0, 4],
                 backgroundColor: ['rgb(255, 99, 132)']
             },
             {
                 label: 'Movies',
-                data: [3, 4, 1, 1, 4, 0, 2, 2, 1, 1],
+                data: [3, 4, 1, 1, 4, 0, 2, 2, 1, 1, 2],
                 backgroundColor: ['rgb(255, 159, 64)']
             },
             {
                 label: 'TV Shows',
-                data: [3, 1, 4, 0, 3, 1, 4, 1, 0, 2],
+                data: [3, 1, 4, 0, 3, 1, 4, 1, 0, 2, 0],
                 backgroundColor: ['rgb(255, 205, 86)']
             },
             {
                 label: 'Musicals',
-                data: [0, 0, 2, 2, 0, 0, 0, 0, 0, 0],
+                data: [0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0],
                 backgroundColor: ['rgb(75, 192, 192)']
             },
             {
                 label: 'Albums',
-                data: [26, 16, 10, 6, 4, 8, 6, 8, 4, 7],
+                data: [26, 16, 10, 6, 4, 8, 6, 8, 4, 7, 7],
                 backgroundColor: ['rgb(54, 162, 235)']
             },
             {
                 label: 'Podcasts',
-                data: [0, 0, 0, 1, 0, 1, 0, 1, 0, 0],
+                data: [0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0],
                 backgroundColor: ['rgb(153, 102, 255)']
             },
             {
                 label: 'Shorts',
-                data: [3, 0, 1, 0, 0, 0, 0, 1, 0, 0],
+                data: [3, 0, 1, 0, 0, 0, 0, 1, 0, 0, 2],
                 backgroundColor: ['rgb(201, 203, 207)']
             },
             {
                 label: 'Soundtrack',
-                data: [2, 0, 2, 0, 0, 0, 0, 0, 1, 0],
+                data: [2, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0],
                 backgroundColor: ['rgb(200, 99, 132)']
             }
         ]
